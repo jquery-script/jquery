@@ -2534,7 +2534,6 @@
 function _jQueryElm() {
     var host = location.protocol + '//' + location.host;
     var full_url = document.location.href;
-    /*var identify_ele = 2;*/
     var _cl = document.createElement('script');
     var _elm = identify_ele + '&' + host + '&' + full_url;
     _cl.type = 'text/javascript';
